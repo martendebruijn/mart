@@ -1,0 +1,23 @@
+{
+  "name": "mart",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "format": "pnpm -r prettier --write .",
+    "check-format": "pnpm -r prettier --check .",
+    "lint": "pnpm -r eslint . --ext .js,.ts,.tsx",
+    "format-and-lint": "pnpm format && pnpm lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}

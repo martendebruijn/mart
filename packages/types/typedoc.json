@@ -1,0 +1,8 @@
+{
+  "entryPoints": ["src"], // Entry point(s) for your code
+  "out": "docs", // Output directory for documentation
+  "exclude": ["**/*.test.ts"], // Exclude test files
+  "includeVersion": true, // Include package version in docs
+  "tsconfig": "tsconfig.json", // Use your existing tsconfig
+  "readme": "README.md" // Use README as an introduction page
+}

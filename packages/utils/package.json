@@ -1,0 +1,11 @@
+{
+  "name": "utils",
+  "version": "0.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "tsup": "^8.3.5"
+  },
+  "scripts": {
+    "build": "tsup"
+  }
+}
