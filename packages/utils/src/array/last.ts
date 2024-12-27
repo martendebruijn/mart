@@ -1,5 +1,6 @@
 import { item } from "./item";
 import { maxIndex } from "./maxIndex";
+import { isArray } from "types";
 
 /**
  * Returns the last element of an array.
@@ -9,5 +10,6 @@ import { maxIndex } from "./maxIndex";
  * @returns {A[number]} - The last element of the array.
  */
 export function last<A extends any[]>(array: A): A[number] {
+  if (!isArray(array)) throw new Error("utils/last: input should be an array");
   return item(array, maxIndex(array));
 }

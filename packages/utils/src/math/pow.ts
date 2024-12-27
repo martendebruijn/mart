@@ -1,3 +1,5 @@
+import { isNegative, isNumber } from "types";
+
 /**
  * Calculates the power of a given base raised to a specified exponent.
  *
@@ -6,6 +8,8 @@
  * @returns The result of the base raised to the power of the exponent.
  */
 export function pow(base: number, exponent: number): number {
-  // if (base === 0 && isNegative(exponent)) return NaN;
+  if (!isNumber(base) && !isNumber(exponent))
+    throw new Error("utils/pow: inputs should be numbers");
+  if (base === 0 && isNegative(exponent)) return NaN;
   return base ** exponent;
 }

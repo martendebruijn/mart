@@ -1,5 +1,5 @@
 export * from "./capitalize";
-export * from "./getFirstLetter";
-export * from "./getLetter";
+export * from "./firstLetter";
+export * from "./letter";
 export * from "./lowerCase";
 export * from "./upperCase";

@@ -1,4 +1,5 @@
 import { item } from "./item";
+import { isArray } from "types";
 
 /**
  * Returns the first element of an array.
@@ -8,5 +9,7 @@ import { item } from "./item";
  * @returns {A[number]} The first element of the array.
  */
 export function first<A extends any[]>(array: A): A[number] {
+  if (!isArray(array))
+    throw new Error("utils/first: parameter should be an array");
   return item(array, 0);
 }

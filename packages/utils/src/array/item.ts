@@ -1,3 +1,5 @@
+import { isArray } from "types";
+
 /**
  * Retrieves the item at the specified index from the given array.
  *
@@ -7,5 +9,6 @@
  * @returns {A[number]} - The item at the specified index in the array.
  */
 export function item<A extends any[]>(array: A, index: number): A[number] {
+  if (!isArray(array)) throw new Error("utils/item: input should be an array");
   return array[index];
 }

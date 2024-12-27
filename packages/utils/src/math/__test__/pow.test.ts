@@ -24,11 +24,11 @@ describe("pow", () => {
     expect(pow(0, 5)).toBe(0);
   });
 
-  // it("should return NaN when the base is 0 and the exponent is negative", () => {
-  //   expect(pow(0, -1)).toBeNaN();
-  // });
+  it("should return NaN when the base is 0 and the exponent is negative", () => {
+    expect(pow(0, -1)).toBeNaN();
+  });
 
-  // it("should return NaN when the base is negative and the exponent is a non-integer", () => {
-  //   expect(pow(-2, 0.5)).toBeNaN();
-  // });
+  it("should return NaN when the base is negative and the exponent is a non-integer", () => {
+    expect(pow(-2, 0.5)).toBeNaN();
+  });
 });

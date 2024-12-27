@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "main": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "dependencies": {
+    "types": "workspace:*"
+  },
   "devDependencies": {
     "tsup": "^8.3.5",
     "vitest": "^2.1.8"
